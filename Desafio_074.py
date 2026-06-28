@@ -1,6 +1,10 @@
 from random import randint
 
-números = (randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10))
+números = (randint(1, 10),
+           randint(1, 10),
+           randint(1, 10),
+           randint(1, 10),
+           randint(1, 10))
 maior = 0
 menor = 0
 
