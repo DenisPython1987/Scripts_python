@@ -13,6 +13,6 @@ print(f"{categoria:^60}")
 print("-" * 60)
 
 while contador < len(produtos):
-    print(f"{produtos[contador]:.<40} R${produtos[contador + 1]:.2f}")
+    print(f"{produtos[contador]:.<40} R${produtos[contador + 1]:>8.2f}")
     contador += 2
 
