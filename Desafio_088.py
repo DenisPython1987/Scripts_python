@@ -22,10 +22,5 @@ while True:
 
 for i in range(len(megasena)):
     print(f"O {i + 1}º jogo foi: ", end='')
-    for indice in range(0, len(megasena[i])):
-        print(f"{megasena[i][indice]}", end='')
-        sleep(1)
-        if indice < len(megasena[i]) - 1:
-            print(", ", end='')
-        else:
-            print('.')
+    print(f"{megasena[i]}")
+    sleep(1)
