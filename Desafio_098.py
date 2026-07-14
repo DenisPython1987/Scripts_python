@@ -9,15 +9,15 @@ print("\033[35m-*-\033[m" * 20)
 def contador(início, fim, passo):
     if passo == 0:
         passo = 1
+    if passo < 0:
+        passo *= -1
     if início < fim:
         for i in range(início, fim + 1, passo):
             print(f"\033[36m{i}\033[m", end=" ")
             sleep(1)
         print()
     elif fim < início:
-        if passo > 0:
-            passo *= -1
-        for i in range(início, fim - 1, passo):
+        for i in range(início, fim - 1, -passo):
             print(f"\033[36m{i}\033[m", end=" ")
             sleep(1)
         print()
