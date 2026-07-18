@@ -1,5 +1,3 @@
-from Desafio_090 import situação
-
 
 def notas(* n, show=False):
     maior = soma = menor = 0
@@ -16,7 +14,7 @@ def notas(* n, show=False):
     dicionário_notas['quantidade_notas'] = len(n)
     dicionário_notas['maior_nota'] = maior
     dicionário_notas['menor_nota'] = menor
-    dicionário_notas['média'] = média
+    dicionário_notas['média'] = f'{média:.2f}'
     if show:
         if média >= 7:
             dicionário_notas['situação'] = "boa"
@@ -25,3 +23,8 @@ def notas(* n, show=False):
         else:
             dicionário_notas['situação'] = "ruim"
     return dicionário_notas
+teste = ()
+resultado = notas(1, 7, 5.5, 10, 8, 9, 9.7, 6.5, show=True)
+print(resultado)
+resultado_2 = notas(5, 5.5, 6.7, 7.2, 1.2, 2.3, 4.4, show=True)
+print(resultado_2)
