@@ -6,7 +6,7 @@ def leia_dinheiro(mensagem):
     """
     while True:
         número = str(input(mensagem))
-        parcial = número.replace(',', '')
+        parcial = número.replace(',', '').replace('.', '')
         if parcial.isnumeric():
             return float(número.replace(',', '.'))
         else:
