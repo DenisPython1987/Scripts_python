@@ -7,8 +7,8 @@ def leia_int(mensagem):
             print(f"{valor} não é um número inteiro válido. Tente novamente.")
             continue
         except KeyboardInterrupt:
-            print("O usuário não quis digitar esse valor.")
-            break
+            print("\nO usuário não quis digitar esse valor.")
+            return 0
         else:
             return valor
 

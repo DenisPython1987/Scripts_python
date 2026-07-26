@@ -3,7 +3,7 @@ def cadastrar(nome, idade):
 
 def gravar(lista):
     with open("Desafio_115.txt", "a", encoding='utf-8') as arquivo:
-        arquivo.write(f"{lista[0]}; {lista[1]}\n")
+        arquivo.write(f"{lista[0]};{lista[1]}\n")
 
 def ler_arquivo(arquivo):
     pessoa = []
